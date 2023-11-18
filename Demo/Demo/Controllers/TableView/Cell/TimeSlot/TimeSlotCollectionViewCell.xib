@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pae-X6-utm" customClass="TimeSlotCollectionViewCell" customModule="Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="43"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="132" height="43"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbL-mf-XCm">
+                        <rect key="frame" x="0.0" y="0.0" width="132" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDO-hC-v87">
+                                <rect key="frame" x="10" y="0.0" width="112" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WDO-hC-v87" secondAttribute="trailing" constant="10" id="2wU-ey-Ki6"/>
+                            <constraint firstItem="WDO-hC-v87" firstAttribute="leading" secondItem="bbL-mf-XCm" secondAttribute="leading" constant="10" id="Gc3-vp-Ccc"/>
+                            <constraint firstAttribute="bottom" secondItem="WDO-hC-v87" secondAttribute="bottom" id="Lb7-RQ-DDq"/>
+                            <constraint firstItem="WDO-hC-v87" firstAttribute="top" secondItem="bbL-mf-XCm" secondAttribute="top" id="kzL-ht-m2V"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="EnW-3u-KW0"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bbL-mf-XCm" secondAttribute="bottom" constant="5" id="NpW-1P-VLe"/>
+                <constraint firstItem="bbL-mf-XCm" firstAttribute="leading" secondItem="pae-X6-utm" secondAttribute="leading" id="Waf-V5-0HB"/>
+                <constraint firstItem="bbL-mf-XCm" firstAttribute="top" secondItem="pae-X6-utm" secondAttribute="top" id="hEU-Ma-IqM"/>
+                <constraint firstAttribute="trailing" secondItem="bbL-mf-XCm" secondAttribute="trailing" id="ntL-BL-hF3"/>
+            </constraints>
+            <size key="customSize" width="132" height="43"/>
+            <connections>
+                <outlet property="mainView" destination="bbL-mf-XCm" id="hfn-0S-IkE"/>
+                <outlet property="timeLabel" destination="WDO-hC-v87" id="KFJ-VP-j6M"/>
+            </connections>
+            <point key="canvasLocation" x="201.52671755725191" y="17.253521126760564"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uHI-nx-lfI" customClass="UserCollectionViewCell" customModule="Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-T1-CTd">
+                        <rect key="frame" x="0.0" y="5" width="150" height="156"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pya-nW-hV5">
+                                <rect key="frame" x="25" y="10" width="100" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QUI-GW-I6O">
+                                        <rect key="frame" x="0.0" y="2.6666666666666643" width="100" height="95"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QUI-GW-I6O" secondAttribute="trailing" id="DaI-uJ-di0"/>
+                                    <constraint firstAttribute="height" constant="100" id="TSo-Xd-fK1"/>
+                                    <constraint firstItem="QUI-GW-I6O" firstAttribute="top" secondItem="pya-nW-hV5" secondAttribute="top" id="ffp-eJ-VR6"/>
+                                    <constraint firstAttribute="width" constant="100" id="fkU-5B-m48"/>
+                                    <constraint firstItem="QUI-GW-I6O" firstAttribute="leading" secondItem="pya-nW-hV5" secondAttribute="leading" id="nyS-mj-Xl8"/>
+                                    <constraint firstAttribute="bottom" secondItem="QUI-GW-I6O" secondAttribute="bottom" id="tNs-do-ZW0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray5Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joely Viniier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcg-xW-qyW">
+                                <rect key="frame" x="16" y="126" width="118" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="xcV-8O-lva"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7TI-o6-6YW">
+                                <rect key="frame" x="110" y="6" width="35" height="33.666666666666671"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="5ZS-ig-bEb"/>
+                                    <constraint firstAttribute="height" constant="35" id="82B-dy-als"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rcg-xW-qyW" firstAttribute="leading" secondItem="AdU-T1-CTd" secondAttribute="leading" constant="16" id="5Fm-iw-WGP"/>
+                            <constraint firstItem="Rcg-xW-qyW" firstAttribute="top" secondItem="pya-nW-hV5" secondAttribute="bottom" constant="16" id="5bj-hB-1y8"/>
+                            <constraint firstAttribute="trailing" secondItem="7TI-o6-6YW" secondAttribute="trailing" constant="5" id="a1F-gA-yDg"/>
+                            <constraint firstAttribute="trailing" secondItem="Rcg-xW-qyW" secondAttribute="trailing" constant="16" id="cxW-rC-zUr"/>
+                            <constraint firstItem="pya-nW-hV5" firstAttribute="centerX" secondItem="AdU-T1-CTd" secondAttribute="centerX" id="dRe-56-uvg"/>
+                            <constraint firstItem="pya-nW-hV5" firstAttribute="top" secondItem="AdU-T1-CTd" secondAttribute="top" constant="10" id="xRk-Yd-1j8"/>
+                            <constraint firstItem="7TI-o6-6YW" firstAttribute="top" secondItem="AdU-T1-CTd" secondAttribute="top" constant="5" id="yti-2l-cjP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemGreenColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="W60-s4-AUx"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AdU-T1-CTd" secondAttribute="bottom" constant="5" id="0h8-PO-PHX"/>
+                <constraint firstAttribute="trailing" secondItem="AdU-T1-CTd" secondAttribute="trailing" constant="10" id="2RS-j7-4lK"/>
+                <constraint firstItem="AdU-T1-CTd" firstAttribute="leading" secondItem="uHI-nx-lfI" secondAttribute="leading" id="7j6-cR-z0z"/>
+                <constraint firstItem="AdU-T1-CTd" firstAttribute="top" secondItem="uHI-nx-lfI" secondAttribute="top" constant="5" id="GwY-pn-K5i"/>
+            </constraints>
+            <size key="customSize" width="160" height="166"/>
+            <connections>
+                <outlet property="avatarImageView" destination="QUI-GW-I6O" id="4h4-ff-YPE"/>
+                <outlet property="mainView" destination="AdU-T1-CTd" id="Rsx-TZ-dwG"/>
+                <outlet property="nameLabel" destination="Rcg-xW-qyW" id="WyA-dI-MsN"/>
+                <outlet property="selectedPicture" destination="7TI-o6-6YW" id="w4y-6n-YcE"/>
+            </connections>
+            <point key="canvasLocation" x="91.603053435114504" y="61.267605633802823"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
