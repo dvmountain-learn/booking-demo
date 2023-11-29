@@ -31,7 +31,7 @@ class TimeSlotTableViewCell: UITableViewCell {
         timeSlotCollectionView.register(UINib(nibName: "TimeSlotCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "timeSlotCollectionViewCell")
     }
     
-   fileprivate func selectCell(forIndexPath indexPath: IndexPath) {
+    fileprivate func selectCell(forIndexPath indexPath: IndexPath) {
         timeSlotCollectionView.scrollToItem(
             at: indexPath,
             at: .centeredHorizontally,
